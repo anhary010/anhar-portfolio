@@ -27,7 +27,7 @@
     html.classList.add('motion-ready');
 
     // Hero entrance
-    const heroImg = $('.hero__img'), heroTags = $('.hero__tags'), holder = $('.hero__img-holder');
+    const heroImg = $('.hero__img-frame'), heroTags = $('.hero__tags'), holder = $('.hero__img-holder');
     gsap.set(heroImg, { transformPerspective: 1500 });
     gsap.timeline({ defaults: { ease: 'expo.out' } })
       .fromTo(heroImg, { opacity: 0, y: 250, rotateY: 45 }, { opacity: 1, y: 0, rotateY: 0, duration: 1.2 }, 0.1)

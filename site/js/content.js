@@ -57,7 +57,7 @@ window.CONTENT = {
 
   projects: [
     {
-      slug: "the-individual-apple", year: "2026", cover: "apple-wallcards-1",
+      slug: "the-individual-apple", year: "2026", cover: "apple-poster",
       tag: { en: "Assistant curator", ar: "قيّمة مساعدة" },
       title: { en: "The Individual Apple", ar: "التفاحة الفردية" },
       role: { en: "Assistant Curator & Interpretation System", ar: "قيّمة مساعدة وتصميم نظام التفسير" },
@@ -77,9 +77,12 @@ window.CONTENT = {
           "إلى جانب نظام البطاقات، كتبت وحرّرت النصوص الجدارية بالعربية والإنجليزية، وأعددت سجل الأعمال وجدول التركيب، ونسّقت المتطلبات مع الفنانين المشاركين. وأعرض أيضًا لوحة من أعمالي، «جدايل أمي» (١٠٠ × ٥٠ سم): أمٌّ تضفر شعر ابنتها، لفتة عناية بسيطة."
         ]
       },
-      images: ["apple-wallcards-2", "apple-wallcards-3", "apple-wallcard-braids"],
+      images: ["apple-wallcards-1", "apple-wallcards-2", "apple-wallcards-3", "apple-wallcard-braids"],
+      links: [ { href: "files/The-Individual-Apple-Label-System.pdf", label: { en: "Open the label system (PDF)", ar: "افتح نظام البطاقات التعريفية (PDF)" } } ],
       facts: [
         { k: { en: "Curator", ar: "القيّمة" }, v: { en: "Rawan Al-Qahtani", ar: "روان القحطاني" } },
+        { k: { en: "Venue", ar: "المكان" }, v: { en: "Shashai Studio – F05", ar: "استوديو شاشاي – F05" } },
+        { k: { en: "Dates", ar: "التواريخ" }, v: { en: "3–5 December 2026 · 4–11 PM", ar: "٣–٥ ديسمبر ٢٠٢٦ · ٤–١١ مساءً" } },
         { k: { en: "Works", ar: "الأعمال" }, v: { en: "8 works · 7 artists", ar: "٨ أعمال · ٧ فنانين" } },
         { k: { en: "Languages", ar: "اللغات" }, v: { en: "Arabic · English", ar: "العربية · الإنجليزية" } }
       ]

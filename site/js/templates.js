@@ -38,11 +38,13 @@
       return slugs.map(s => img(s, '', 'footer__tile')).join('');
     },
     panelBody(p, l, ui) {
+      const lang_ = l;
       const facts = (p.facts || []).map(f => `<div class="panel__fact"><dt>${t(f.k, l)}</dt><dd>${t(f.v, l)}</dd></div>`).join('');
       return `<p class="panel__tag">${t(p.tag, l)}</p>
 <h2 class="panel__title">${t(p.title, l)}</h2>
 <dl class="panel__facts"><div class="panel__fact"><dt>${esc(ui['panel.role'])}</dt><dd>${t(p.role, l)}</dd></div><div class="panel__fact"><dt>${esc(ui['panel.year'])}</dt><dd>${esc(p.year)}</dd></div>${facts}</dl>
 <div class="panel__text">${(p.body[l] || p.body.en).map(s => `<p>${esc(s)}</p>`).join('')}</div>
+${(p.links || []).length ? `<div class="panel__links">${p.links.map(l => `<a class="btn" href="${esc(l.href)}" target="_blank" rel="noopener">${t(l.label, lang_)}</a>`).join('')}</div>` : ''}
 ${p.images.length ? `<div class="panel__strip">${p.images.map(s => `<figure>${img(s, t(p.title, l), 'panel__strip-img')}</figure>`).join('')}</div>` : ''}`;
     }
   };

@@ -37,9 +37,18 @@ def export(src_pdf, page, xref, slug, max_w=1600):
     img.save(path, "JPEG", quality=82, optimize=True, progressive=True)
     return {"w": img.width, "h": img.height, "src": f"{os.path.basename(src_pdf)[:30]} p{page}", "bytes": os.path.getsize(path)}
 
+EXTRA = {"apple-poster": os.path.join(os.path.dirname(os.path.abspath(__file__)), "src-apple-poster.jpeg")}
+
+def export_file(path, slug, max_w=1600):
+    img = Image.open(path).convert("RGB")
+    if img.width > max_w: img = img.resize((max_w, round(img.height*max_w/img.width)), Image.LANCZOS)
+    out = os.path.join(OUT, slug + ".jpg"); img.save(out, "JPEG", quality=86, optimize=True, progressive=True)
+    return {"w": img.width, "h": img.height, "src": os.path.basename(path), "bytes": os.path.getsize(out)}
+
 if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     manifest = {slug: export(*args, slug) for slug, args in MAP.items()}
+    manifest.update({slug: export_file(path, slug) for slug, path in EXTRA.items()})
     json.dump(manifest, open(os.path.join(OUT, "manifest.json"), "w"), indent=1, ensure_ascii=False)
     total = sum(m["bytes"] for m in manifest.values())
     print(f"{len(manifest)} images, {total/1e6:.1f} MB")
