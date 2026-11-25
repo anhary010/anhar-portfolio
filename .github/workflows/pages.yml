@@ -19,8 +19,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
+      - name: Stage public files only (no docs/ or tools/)
+        run: |
+          mkdir -p _site
+          cp -R site card cv _site/
+          cp index.html .nojekyll _site/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4

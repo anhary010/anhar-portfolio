@@ -1,10 +1,17 @@
 (function () {
   const S = {
-    en: { name: 'Anhar Almalki', role: 'Curator · Exhibition & Spatial Designer', tags: ['#Curatorial', '#Spatial', '#Archival', '#Research'], save: 'Save contact', whatsapp: 'WhatsApp', email: 'Email', linkedin: 'LinkedIn', instagram: 'Instagram', youtube: 'Shawahid on YouTube', portfolio: 'Portfolio', scan: 'Scan to open this card', open: 'Open for curatorial collaborations & cultural exchange', toggle: 'ع', toggleLabel: 'Switch to Arabic', title: 'Anhar Almalki — Digital Card' },
-    ar: { name: 'أنهار المالكي', role: 'قيّمة فنية · مصمّمة معارض وفراغات', tags: ['#تقييم_فني', '#فراغ', '#أرشيف', '#بحث'], save: 'حفظ جهة الاتصال', whatsapp: 'واتساب', email: 'البريد', linkedin: 'لينكدإن', instagram: 'إنستغرام', youtube: 'شواهد على يوتيوب', portfolio: 'الموقع', scan: 'امسح الرمز لفتح البطاقة', open: 'متاحة للتعاون التقييمي والتبادل الثقافي', toggle: 'EN', toggleLabel: 'التبديل إلى الإنجليزية', title: 'أنهار المالكي — بطاقة رقمية' }
+    en: { name: 'Anhar Almalki', role: 'Curator · Exhibition & Spatial Designer', tags: ['#Curatorial', '#Spatial', '#Archival', '#Research'], save: 'Save contact', whatsapp: 'WhatsApp', email: 'Email', linkedin: 'LinkedIn', instagram: 'Instagram', youtube: 'Shawahid on YouTube', portfolio: 'Portfolio', scan: 'Scan to open this card', download: 'Download this card:', open: 'Open for curatorial collaborations & cultural exchange', toggle: 'ع', toggleLabel: 'Switch to Arabic', title: 'Anhar Almalki — Digital Card' },
+    ar: { name: 'أنهار المالكي', role: 'قيّمة فنية · مصمّمة معارض وفراغات', tags: ['#تقييم_فني', '#فراغ', '#أرشيف', '#بحث'], save: 'حفظ جهة الاتصال', whatsapp: 'واتساب', email: 'البريد', linkedin: 'لينكدإن', instagram: 'إنستغرام', youtube: 'شواهد على يوتيوب', portfolio: 'الموقع', scan: 'امسح الرمز لفتح البطاقة', download: 'حمّل البطاقة:', open: 'متاحة للتعاون التقييمي والتبادل الثقافي', toggle: 'EN', toggleLabel: 'التبديل إلى الإنجليزية', title: 'أنهار المالكي — بطاقة رقمية' }
   };
   const html = document.documentElement, q = new URLSearchParams(location.search);
   if (q.get('png') === '1') html.classList.add('png');
+  if (q.get('pdf') === '1') {
+    html.classList.add('pdf');
+    // A PDF travels on its own: make the relative links absolute so they work from any app.
+    const BASE = 'https://anhary010.github.io/anhar-portfolio/';
+    document.querySelector('.act--primary').href = BASE + 'card/anhar.vcf';
+    document.getElementById('portfolioLink').href = BASE + 'site/';
+  }
   function render(lang) {
     const s = S[lang]; html.lang = lang; html.dir = lang === 'ar' ? 'rtl' : 'ltr'; document.title = s.title;
     document.querySelectorAll('[data-i18n]').forEach(el => { const k = el.dataset.i18n; if (!s[k]) return; const icon = el.querySelector('.act__icon'); el.textContent = ''; if (icon) el.appendChild(icon); el.append(document.createTextNode(s[k])); });
