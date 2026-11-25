@@ -70,16 +70,13 @@ html[lang="ar"] .ghost { font-family: 'Cairo', sans-serif; font-weight: 800; fon
 .ghost-wrap--section .ghost { top: -2%; }
 
 /* ========== Hero ========== */
-.hero { position: relative; min-height: 100vh; margin-top: calc(-1 * var(--nav-h)); display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden; padding-top: var(--nav-h); background: var(--ink); color: var(--bg); }
-.hero .ghost { color: #ffffff0b; }
-.hero .hero__name, .hero .hero__taglist { color: var(--bg); }
-.hero .hero__role { color: #d2d2cecc; }
+.hero { position: relative; min-height: 100vh; margin-top: calc(-1 * var(--nav-h)); display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden; padding-top: var(--nav-h); }
 .hero__img-holder { position: relative; z-index: 2; perspective: 1500px; width: 100%; max-width: 630px; margin: 40px auto 0; padding: 0 var(--pad); display: flex; justify-content: center; }
 .hero__img-frame { position: relative; }
 .hero__img { width: 100%; height: auto; max-height: 78vh; object-fit: cover; object-position: top; mix-blend-mode: multiply; filter: grayscale(1) contrast(1.05); -webkit-mask-image: linear-gradient(180deg, #000 70%, transparent 100%); mask-image: linear-gradient(180deg, #000 70%, transparent 100%); transform-style: preserve-3d; }
-.hero--cutout .hero__img { -webkit-mask-image: none; mask-image: none; mix-blend-mode: normal; filter: grayscale(1) brightness(1.55) contrast(.9); opacity: .42; width: auto; max-width: 100%; height: min(78vh, 760px); object-fit: contain; }
+.hero--cutout .hero__img { -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 96%); mask-image: linear-gradient(180deg, #000 55%, transparent 96%); mix-blend-mode: multiply; filter: grayscale(1) contrast(.85) brightness(1.1); opacity: .34; width: auto; max-width: 100%; height: min(78vh, 760px); object-fit: contain; }
 .hero__img-frame { transform-style: preserve-3d; will-change: transform, opacity; }
-.hero__fade { position: absolute; left: 0; right: 0; bottom: 0; height: 260px; background: linear-gradient(180deg, #2a2a2900, var(--ink)); z-index: 3; pointer-events: none; }
+.hero__fade { position: absolute; left: 0; right: 0; bottom: 0; height: 230px; background: linear-gradient(180deg, #0000, var(--bg)); z-index: 3; pointer-events: none; }
 .hero__tags { position: absolute; z-index: 10; bottom: 9%; inset-inline-start: 6%; display: flex; flex-direction: column; gap: 10px; max-width: 520px; }
 .hero__name { font-size: clamp(34px, 4.4vw, 64px); text-transform: uppercase; }
 html[lang="ar"] .hero__name { text-transform: none; }
