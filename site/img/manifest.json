@@ -1,0 +1,152 @@
+{
+ "hero-portrait": {
+  "w": 775,
+  "h": 1062,
+  "src": "Anhar Almalki — Selected Narra p11",
+  "bytes": 36721
+ },
+ "portrait-face": {
+  "w": 1196,
+  "h": 1271,
+  "src": "Anhar Almalki — Selected Narra p2",
+  "bytes": 75022
+ },
+ "portrait-bench": {
+  "w": 868,
+  "h": 1280,
+  "src": "Anhar Almalki — Selected Narra p1",
+  "bytes": 94454
+ },
+ "texture-dark": {
+  "w": 1600,
+  "h": 1206,
+  "src": "Anhar Almalki — Selected Narra p3",
+  "bytes": 100676
+ },
+ "hajj-gallery": {
+  "w": 1600,
+  "h": 900,
+  "src": "Anhar Almalki — Selected Narra p10",
+  "bytes": 246611
+ },
+ "wrth-install-1": {
+  "w": 820,
+  "h": 440,
+  "src": "Anhar Almalki — Selected Narra p8",
+  "bytes": 52648
+ },
+ "wrth-install-2": {
+  "w": 916,
+  "h": 575,
+  "src": "Anhar Almalki — Selected Narra p8",
+  "bytes": 59901
+ },
+ "documented-plan": {
+  "w": 976,
+  "h": 765,
+  "src": "Anhar Almalki — Selected Narra p12",
+  "bytes": 137418
+ },
+ "documented-stone": {
+  "w": 1600,
+  "h": 967,
+  "src": "Anhar Almalki — Selected Narra p12",
+  "bytes": 65683
+ },
+ "documented-gallery": {
+  "w": 1070,
+  "h": 668,
+  "src": "Anhar Almalki — Selected Narra p13",
+  "bytes": 110636
+ },
+ "craft-hands": {
+  "w": 962,
+  "h": 808,
+  "src": "Anhar Almalki — Selected Narra p15",
+  "bytes": 118527
+ },
+ "craft-tools": {
+  "w": 746,
+  "h": 1156,
+  "src": "Anhar Almalki — Selected Narra p15",
+  "bytes": 81950
+ },
+ "erasure-poster": {
+  "w": 1382,
+  "h": 784,
+  "src": "Anhar Almalki — Selected Narra p17",
+  "bytes": 109754
+ },
+ "erasure-visitor": {
+  "w": 960,
+  "h": 1280,
+  "src": "Anhar Almalki — Selected Narra p16",
+  "bytes": 116561
+ },
+ "mustahel-talk": {
+  "w": 1280,
+  "h": 627,
+  "src": "Anhar Almalki — Selected Narra p19",
+  "bytes": 86260
+ },
+ "mustahel-group": {
+  "w": 778,
+  "h": 492,
+  "src": "Anhar Almalki — Selected Narra p19",
+  "bytes": 53299
+ },
+ "continuum-install-1": {
+  "w": 1600,
+  "h": 900,
+  "src": "Anhar Almalki — Selected Narra p21",
+  "bytes": 128285
+ },
+ "continuum-install-2": {
+  "w": 1600,
+  "h": 900,
+  "src": "Anhar Almalki — Selected Narra p21",
+  "bytes": 162875
+ },
+ "shawahid-logo": {
+  "w": 1229,
+  "h": 820,
+  "src": "Anhar Almalki — Selected Narra p23",
+  "bytes": 127190
+ },
+ "shawahid-orange": {
+  "w": 1171,
+  "h": 659,
+  "src": "Anhar Almalki — Selected Narra p23",
+  "bytes": 39938
+ },
+ "award-ceremony": {
+  "w": 568,
+  "h": 558,
+  "src": "Anhar Almalki — Selected Narra p5",
+  "bytes": 35662
+ },
+ "apple-wallcards-1": {
+  "w": 1600,
+  "h": 1131,
+  "src": "The Individual Apple – Wall Ca p1",
+  "bytes": 110616
+ },
+ "apple-wallcards-2": {
+  "w": 1600,
+  "h": 1131,
+  "src": "The Individual Apple – Wall Ca p2",
+  "bytes": 95963
+ },
+ "apple-wallcards-3": {
+  "w": 1600,
+  "h": 1131,
+  "src": "The Individual Apple – Wall Ca p5",
+  "bytes": 88995
+ },
+ "apple-wallcard-braids": {
+  "w": 1600,
+  "h": 1131,
+  "src": "The Individual Apple – Wall Ca p9",
+  "bytes": 85728
+ }
+}
