@@ -27,10 +27,13 @@
     const pg = $('#practiceGrid'); if (pg) pg.innerHTML = T.practice(C.practice, lang);
     const rt = $('#recogTrack'); if (rt) rt.innerHTML = T.recognition(C.recognition, lang);
     const jl = $('#journeyList'); if (jl) jl.innerHTML = T.journey(C.journey, lang);
+    // Re-created nodes lost their reveal state: once motion has started (or is off), show them straight away.
+    if (html.classList.contains('motion-ready') || html.classList.contains('no-motion')) $$('.reveal', pg || document).concat($$('.reveal', jl || document)).forEach(el => el.classList.add('is-in'));
     const ps = $('#playStrip'); if (ps && !ps.children.length) ps.innerHTML = T.playground(C.playground);
     const fg = $('#footerGrid'); if (fg && !fg.children.length) fg.innerHTML = T.footerGrid(C.playground.slice(0, 8));
     document.title = lang === 'ar' ? 'أنهار المالكي — ممارسة تقييمية / فراغية / أرشيفية' : 'Anhar Almalki — Curatorial / Spatial / Archival Practice';
     html.classList.add('is-rendered');
+    if (window.PANEL) window.PANEL.rerender();
     window.dispatchEvent(new CustomEvent('anhar:rendered', { detail: { lang } }));
   }
 
@@ -62,9 +65,8 @@
   }
 
   window.render = render; window.setLang = setLang;
-  document.addEventListener('DOMContentLoaded', () => {
-    html.classList.add('js'); render(currentLang()); initUI();
-    // Safety net: if the motion library never arrives (blocked CDN, slow network), show everything.
-    setTimeout(() => { if (!window.MOTION) { html.classList.add('motion-ready', 'no-motion'); $$('.reveal, .footer__tile').forEach(el => el.classList.add('is-in')); } }, 1800);
-  });
+  // This script sits at the end of <body>, so the DOM above it is parsed: run now, do not wait for deferred/async scripts.
+  html.classList.add('js'); render(currentLang()); initUI();
+  // Safety net: if the motion library never arrives (blocked CDN, slow network), show everything.
+  setTimeout(() => { if (!html.classList.contains('motion-ready')) { html.classList.add('motion-ready', 'no-motion'); $$('.reveal, .footer__tile').forEach(el => el.classList.add('is-in')); } }, 1800);
 })();

@@ -20,10 +20,19 @@
     off();
   }
 
+  const NAV_H = 70, STICK_TOP = NAV_H + 8;
+  let waited = 0;
   function init() {
-    if (inited) return; inited = true;
-    if (reduce || !window.gsap || !window.ScrollTrigger) { showEverything(); bindPracticeHover(); return; }
+    if (inited) return;
+    if (reduce) { inited = true; showEverything(); bindPracticeHover(); return; }
+    if (!window.gsap || !window.ScrollTrigger) {
+      // GSAP loads async; poll briefly, otherwise fall back to a static page.
+      if (waited < 3500) { waited += 100; return setTimeout(init, 100); }
+      inited = true; showEverything(); bindPracticeHover(); return;
+    }
+    inited = true;
     gsap.registerPlugin(ScrollTrigger);
+    const alreadyShown = html.classList.contains('no-motion');
     html.classList.add('motion-ready');
 
     // Hero entrance
@@ -40,13 +49,8 @@
       gsap.fromTo(g, { xPercent: rtl ? -20 : 0 }, { xPercent: rtl ? 0 : -20, ease: 'none', scrollTrigger: { trigger: g.closest('section, footer') || g, start: 'top bottom', end: 'bottom top', scrub: true } });
     });
 
-    // Reveals
-    $$('.reveal').forEach(el => {
-      ScrollTrigger.create({ trigger: el, start: 'top 88%', once: true, onEnter: () => {
-        el.classList.add('is-in');
-        if (el.classList.contains('reveal--stagger')) gsap.fromTo(el.children, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: .6, stagger: .06, ease: 'power3.out' });
-      } });
-    });
+    // Reveals (re-bindable for nodes created by a language re-render)
+    bindReveals();
 
     // Stacked cards: as the next card covers this one, scale + dim the covered card
     const cards = $$('.stack__card');
@@ -54,7 +58,7 @@
       const next = cards[i + 1]; if (!next) return;
       const link = $('.stack__link', card), overlay = $('.stack__overlay', card), content = $('.stack__content', card);
       const base = parseFloat(getComputedStyle(overlay).opacity) || .3;
-      gsap.timeline({ scrollTrigger: { trigger: next, start: 'top bottom', end: 'top 4em', scrub: true } })
+      gsap.timeline({ scrollTrigger: { trigger: next, start: 'top bottom', end: 'top ' + STICK_TOP + 'px', scrub: true } })
         .to(link, { scale: .96, ease: 'none' }, 0)
         .to(overlay, { opacity: Math.min(base + .3, .85), ease: 'none' }, 0)
         .to(content, { y: -20, ease: 'none' }, 0);
@@ -76,15 +80,27 @@
     ScrollTrigger.create({ trigger: '.recog__track', start: 'top 85%', once: true, onEnter: () => gsap.fromTo('.recog__item', { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: .7, stagger: .08, ease: 'power3.out' }) });
   }
 
+  function bindReveals() {
+    if (!window.ScrollTrigger) return;
+    $$('.reveal:not([data-rv])').forEach(el => {
+      el.dataset.rv = '1';
+      ScrollTrigger.create({ trigger: el, start: 'top 88%', once: true, onEnter: () => {
+        el.classList.add('is-in');
+        if (el.classList.contains('reveal--stagger')) gsap.fromTo(el.children, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: .6, stagger: .06, ease: 'power3.out' });
+      } });
+    });
+  }
+
   function refresh() {
     if (!inited) return init();
     bindPracticeHover();
+    bindReveals();
     if (window.ScrollTrigger) ScrollTrigger.refresh();
   }
 
   window.MOTION = { init, refresh };
-  if (document.readyState === 'complete' || document.readyState === 'interactive') setTimeout(init, 0);
-  else document.addEventListener('DOMContentLoaded', init);
-  // Re-bind hover handlers after a language re-render replaces the practice grid.
-  window.addEventListener('anhar:rendered', () => { if (inited) bindPracticeHover(); });
+  if (html.classList.contains('is-rendered')) init();
+  else window.addEventListener('anhar:rendered', init, { once: true });
+  // Re-bind hover handlers and reveal triggers after a language re-render replaces nodes.
+  window.addEventListener('anhar:rendered', () => { if (inited) { bindPracticeHover(); bindReveals(); } });
 })();

@@ -2,13 +2,14 @@ BEGIN:VCARD
 VERSION:3.0
 N:Almalki;Anhar;;;
 FN:Anhar Almalki
+X-PHONETIC-FIRST-NAME:أنهار
+X-PHONETIC-LAST-NAME:المالكي
 TITLE:Curator & Exhibition Designer
-ORG:Curatorial / Spatial / Archival Practice
 TEL;TYPE=CELL:+966534402993
 EMAIL;TYPE=INTERNET:anharalmalki1@gmail.com
 URL:https://USERNAME.github.io/anhar-portfolio/site/
 X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/anhar-almalki-
 X-SOCIALPROFILE;type=instagram:https://www.instagram.com/anhary12
 X-SOCIALPROFILE;type=youtube:https://www.youtube.com/@SHAWAHID-0
-NOTE:Open for curatorial collaborations & cultural exchange. Riyadh, Saudi Arabia.
+NOTE:أنهار المالكي · Curator & Exhibition Designer · Open for curatorial collaborations & cultural exchange · Riyadh\, Saudi Arabia
 END:VCARD

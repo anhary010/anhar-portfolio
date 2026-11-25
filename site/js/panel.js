@@ -104,6 +104,7 @@
   });
   window.addEventListener('hashchange', route);
   window.PANEL = { open, close, rerender };
-  const boot = () => route();
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+  // Route only after main.js has rendered the language, so a deep link opens in the right language.
+  if (html.classList.contains('is-rendered')) route();
+  else window.addEventListener('anhar:rendered', route, { once: true });
 })();
