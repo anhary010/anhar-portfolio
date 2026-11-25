@@ -1,0 +1,26 @@
+name: Sync Shawahid episodes
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch latest uploads from the channel feed
+        run: python3 tools/fetch_shawahid.py
+      - name: Commit if the list changed, then redeploy Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- site/data/shawahid.json; then echo "no new episodes"; exit 0; fi
+          git config user.name "shawahid-sync[bot]"
+          git config user.email "actions@github.com"
+          git add site/data/shawahid.json
+          git commit -m "content: new Shawahid episode(s) from the channel feed"
+          git push
+          gh workflow run pages.yml --ref main

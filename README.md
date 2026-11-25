@@ -40,4 +40,4 @@ node tools/check_content.mjs         # EN/AR parity check
 
 ## Edit content
 All site text lives in `site/js/content.js` (EN + AR). After editing run `node tools/check_content.mjs && node tools/prerender.mjs`.
-To add Shawahid videos: in the `shawahid` project set `videos: [{ id: "YOUTUBE_ID", title: { en: "...", ar: "..." } }]` and update the YouTube link in `links`.
+Shawahid episodes update themselves: `.github/workflows/shawahid.yml` runs every 6 hours, pulls the channel's RSS feed into `site/data/shawahid.json`, commits if there is a new upload and redeploys. To force it now: Actions → "Sync Shawahid episodes" → Run workflow. The static `videos` list in `content.js` is only the fallback.

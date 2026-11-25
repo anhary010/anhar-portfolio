@@ -65,6 +65,13 @@
   }
 
   window.render = render; window.setLang = setLang;
+  // Live episode list for Shawahid (written by .github/workflows/shawahid.yml); falls back to the static list in content.js.
+  fetch('data/shawahid.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(d => {
+    if (!d || !Array.isArray(d.videos) || !d.videos.length) return;
+    const sh = C.projects.find(x => x.slug === 'shawahid'); if (!sh) return;
+    sh.videos = d.videos.slice(0, 6).map(v => ({ id: v.id, title: { en: v.title, ar: v.title } }));
+    if (window.PANEL) window.PANEL.rerender();
+  }).catch(() => {});
   // This script sits at the end of <body>, so the DOM above it is parsed: run now, do not wait for deferred/async scripts.
   html.classList.add('js'); render(currentLang()); initUI();
   // Safety net: if the motion library never arrives (blocked CDN, slow network), show everything.
