@@ -93,7 +93,7 @@ the only one that is both publishable today and fully owned.
    1. The Individual Apple — Assistant Curator & Interpretation System — 2026
    2. Documented, Therefore It Remained — Curatorial Concept — 2025/26
    3. Craft in Flux — Research Exhibition — 2026
-   4. Beyond Erasure — Living Archive, Al-Hizha neighbourhood — 2026
+   4. Beyond Erasure — Living Archive, Al-Nuzha neighbourhood — 2026
    5. Continuum '26 — Artist Producer, Diriyah Art Futures — 2026
    6. Hajj Exhibition — Design Advisory & Spatial Coordination — 2021–2024
    7. WRTH Annual Exhibition — Installation & Interpretation — 2025
@@ -114,7 +114,7 @@ the only one that is both publishable today and fully owned.
 8. **Playground** ("Play ground" ghost marquee): a scrolling strip of dossier
    images (installation shots, sketches, Shawahid logo) — template's fun grid.
 9. **Footer / Contact**: left "Open for curatorial collaborations & cultural
-   exchange" + email, phone, LinkedIn, Instagram @Anhray12; right the
+   exchange" + email, phone, LinkedIn, Instagram @anhary12; right the
    perspective image grid flipping in on scroll (template footer); bottom
    links row and © 2026 Anhar Almalki.
 
@@ -210,7 +210,7 @@ The Individual Apple entry (draft):
   stays one file set and the transition stays smooth; URLs still deep-link
   via `#project/the-individual-apple`.
 - WhatsApp number = the phone on the CV (+966 53 440 2993).
-- Instagram handle @Anhray12 from the dossier back page.
+- Instagram handle @anhary12 from the dossier back page.
 
 ## 9. Left to the builder
 Exact easing curves, image crops, Arabic line lengths, QR size, PNG card

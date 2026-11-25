@@ -18,7 +18,7 @@
 - Images: max 1600 px wide, JPEG q82 (or WebP), B/W kept as is. Total `site/img` ≤ 12 MB.
 - `prefers-reduced-motion: reduce` → no transforms, instant opacity only.
 - Every external script from cdnjs.cloudflare.com; fonts only from fonts.googleapis.com.
-- Contact: anharalmalki1@gmail.com · +966 53 440 2993 · linkedin.com/in/anhar-almalki- · instagram @Anhray12.
+- Contact: anharalmalki1@gmail.com · +966 53 440 2993 · linkedin.com/in/anhar-almalki- · instagram @anhary12.
 - Commit after each task; messages end with `Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>`.
 
 ## Review Focus
@@ -137,7 +137,7 @@
 - Consumes: tokens from `site/css/style.css` (copied as `card.css` root block), `site/img/portrait-face.jpg`.
 - Produces: `tools/make_qr.py URL` writes `card/qr.svg` (segno, error level M, dark `#2a2a29`, 4-module quiet zone). `render_card_png.sh` renders `card/index.html?png=1` at 1080×1920 DPR 1.
 
-- [ ] Step 1: Write `anhar.vcf` (VERSION:3.0, CRLF, `N:Almalki;Anhar;;;`, `FN:Anhar Almalki`, `TITLE:Curator & Exhibition Designer`, `TEL;TYPE=CELL:+966534402993`, `EMAIL:anharalmalki1@gmail.com`, `URL:<portfolio url>`, `X-SOCIALPROFILE;type=linkedin:…`, `X-SOCIALPROFILE;type=instagram:https://instagram.com/Anhray12`, `NOTE:` one line).
+- [ ] Step 1: Write `anhar.vcf` (VERSION:3.0, CRLF, `N:Almalki;Anhar;;;`, `FN:Anhar Almalki`, `TITLE:Curator & Exhibition Designer`, `TEL;TYPE=CELL:+966534402993`, `EMAIL:anharalmalki1@gmail.com`, `URL:<portfolio url>`, `X-SOCIALPROFILE;type=linkedin:…`, `X-SOCIALPROFILE;type=instagram:https://instagram.com/anhary12`, `NOTE:` one line).
 - [ ] Step 2: Write `card/index.html` + `card.css`: 420px column; portrait circle-cropped on the grey; name in Anton 44px; title; four tags; six buttons (Save contact, WhatsApp `https://wa.me/966534402993`, Email `mailto:`, LinkedIn, Instagram, Portfolio); QR block; EN/ع toggle (`card.js` holds the ~20 strings); `?png=1` → 1080×1920 poster layout with QR large.
 - [ ] Step 3: Review Focus 5: `python3 - <<EOF` validate the vcf: starts `BEGIN:VCARD`, has `VERSION:3.0`, every line ends `\r\n`, contains `TEL;TYPE=CELL:+966534402993`. Expected: prints OK.
 - [ ] Step 4: `python3 tools/make_qr.py "https://<user>.github.io/anhar-portfolio/card/"` (placeholder URL now; rerun in Task 8). Expected: `card/qr.svg` exists, decodes (segno `--decode` not available: verify by rendering to PNG and scanning with `zbarimg` if installed; otherwise trust segno and eyeball).

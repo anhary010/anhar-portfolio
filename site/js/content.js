@@ -88,7 +88,7 @@ window.CONTENT = {
       ]
     },
     {
-      slug: "documented-therefore-it-remained", year: "2025–2026", cover: "documented-gallery",
+      slug: "documented-therefore-it-remained", year: "2025–2026", cover: "documented-poster",
       tag: { en: "Curatorial concept · MA studio", ar: "مفهوم تقييمي · استوديو الماجستير" },
       title: { en: "Documented, Therefore It Remained", ar: "وُثِّق فبقي" },
       role: { en: "Curatorial Concept & Exhibition Design", ar: "المفهوم التقييمي وتصميم المعرض" },
@@ -106,8 +106,13 @@ window.CONTENT = {
           "من هناك يتتبّع المعرض تطوّر التوثيق نفسه، وكيف نحفظ حضورنا اليوم عبر الصور والصوت والأرشيف والأعمال الفنية والآثار الرقمية. ولا ينتهي بإجابات، بل بسؤال يُعاد إلى الزائر: ماذا أريد أن أترك خلفي؟ وأي شكل سيأخذه بقائي؟"
         ]
       },
-      images: ["documented-plan", "documented-stone"],
-      facts: [ { k: { en: "Context", ar: "السياق" }, v: { en: "MA Museums & Exhibitions Curation, WRTH × NABA", ar: "ماجستير تقييم المتاحف والمعارض، وِرث × نابا" } } ]
+      images: ["documented-gallery", "documented-zone", "documented-3d", "documented-plan", "documented-stone"],
+      facts: [
+        { k: { en: "Exhibition title", ar: "اسم المعرض" }, v: { en: "Self Written · Self Captured", ar: "وُثِّق فبقي" } },
+        { k: { en: "Context", ar: "السياق" }, v: { en: "MA studio, WRTH × NABA · Prof. Sammy Zarka", ar: "استوديو الماجستير، وِرث × نابا · أ. سامي زركا" } },
+        { k: { en: "Team", ar: "الفريق" }, v: { en: "Amal Abdulraheem · Rahaf Alanazi · Anhar Almalki · Reem Almutlaq · Reem Albarqan · Samah Almuqren", ar: "أمل عبدالرحيم · رهف العنزي · أنهار المالكي · ريم المطلق · ريم البرقان · سماح المقرن" } },
+        { k: { en: "Proposed venue", ar: "المكان المقترح" }, v: { en: "Triennale di Milano", ar: "تريينالي ميلانو" } }
+      ]
     },
     {
       slug: "craft-in-flux", year: "2026", cover: "craft-hands",
@@ -134,10 +139,10 @@ window.CONTENT = {
     {
       slug: "beyond-erasure", year: "2026", cover: "erasure-poster",
       tag: { en: "Living archive · MA studio", ar: "أرشيف حي · استوديو الماجستير" },
-      title: { en: "Beyond Erasure", ar: "ما بعد المحو" },
+      title: { en: "Beyond Erasure", ar: "غير قابل للإزالة" },
       role: { en: "Curatorial Concept & Community Research", ar: "المفهوم التقييمي والبحث المجتمعي" },
-      blurb: { en: "A living archive of Al-Hizha neighbourhood in Jeddah: maps, oral histories and local artists reconstructing what a changing city erases.",
-               ar: "أرشيف حي لحي الهزّة في جدة: خرائط وتاريخ شفهي وفنانون محليون يعيدون بناء ما تمحوه مدينة تتغيّر." },
+      blurb: { en: "A living archive of Al-Nuzha neighbourhood in Jeddah: maps, oral histories and local artists reconstructing what a changing city erases.",
+               ar: "أرشيف حي لحي النزهة في جدة: خرائط وتاريخ شفهي وفنانون محليون يعيدون بناء ما تمحوه مدينة تتغيّر." },
       body: {
         en: [
           "Over time my interest in archives moved beyond documentation toward the idea of the living archive: archives built from voices, memories and lived relationships rather than institutional records alone.",
@@ -146,27 +151,27 @@ window.CONTENT = {
         ],
         ar: [
           "مع الوقت تجاوز اهتمامي بالأرشيف فكرة التوثيق إلى فكرة الأرشيف الحي: أرشيف يُبنى من الأصوات والذكريات والعلاقات المعيشة، لا من السجلات المؤسسية وحدها.",
-          "ينظر «ما بعد المحو» إلى مجتمعات تمرّ بتحوّل عمراني سريع ويسأل: ماذا يحدث للذاكرة الجماعية حين تتغيّر المدن؟ لم يكن التركيز على المباني وحدها، بل على الناس الذين منحوا تلك الأماكن معناها. كيف عاشوا هناك؟ كيف يتذكّرونها الآن؟ وما الذي يختفي حين تختفي تفاصيل الحياة اليومية العادية؟",
+          "ينظر «غير قابل للإزالة» إلى مجتمعات تمرّ بتحوّل عمراني سريع ويسأل: ماذا يحدث للذاكرة الجماعية حين تتغيّر المدن؟ لم يكن التركيز على المباني وحدها، بل على الناس الذين منحوا تلك الأماكن معناها. كيف عاشوا هناك؟ كيف يتذكّرونها الآن؟ وما الذي يختفي حين تختفي تفاصيل الحياة اليومية العادية؟",
           "يشتغل المشروع عبر الخرائط والتاريخ الشفهي والفنانين المحليين والذاكرة الجماعية ومشاركة المجتمع لإعادة بناء أرشيف عاطفي. هو محاولة لأن نقول «ما زالوا هنا»، لا «كانوا هنا يومًا»."
         ]
       },
       images: ["erasure-visitor"],
-      facts: [ { k: { en: "Place", ar: "المكان" }, v: { en: "Al-Hizha neighbourhood, Jeddah", ar: "حي الهزّة، جدة" } } ]
+      facts: [ { k: { en: "Place", ar: "المكان" }, v: { en: "Al-Nuzha neighbourhood, Jeddah", ar: "حي النزهة، جدة" } } ]
     },
     {
       slug: "continuum-26", year: "2026", cover: "continuum-install-1",
       tag: { en: "Artist producer · Diriyah Art Futures", ar: "منتجة فنية · مستقبل الفن بالدرعية" },
-      title: { en: "Continuum ’26", ar: "كونتينيوم ٢٦" },
+      title: { en: "Continuum ’26", ar: "استمرارية ٢٦" },
       role: { en: "Artist Producer, DAF residency", ar: "منتجة فنية ضمن إقامة DAF" },
       blurb: { en: "Supporting an artist in residence at Diriyah Art Futures from planning through production to the on-site installation of a work shown in Continuum ’26.",
-               ar: "مرافقة فنان مقيم في «مستقبل الفن بالدرعية» من التخطيط إلى الإنتاج إلى تركيب العمل في معرض كونتينيوم ٢٦." },
+               ar: "مرافقة فنان مقيم في «مستقبل الفن بالدرعية» من التخطيط إلى الإنتاج إلى تركيب العمل في معرض «استمرارية ٢٦» (Continuum ’26)." },
       body: {
         en: [
           "I worked alongside an artist during their residency at Diriyah Art Futures, supporting the production and installation of an artwork presented in Continuum ’26.",
           "The experience gave me a closer understanding of how an artistic concept becomes an exhibition-ready work: planning and coordinating requirements, production, and installation on site. It also sharpened my ability to navigate technical and logistical challenges while keeping the artist’s vision aligned with the practical demands of execution."
         ],
         ar: [
-          "عملت إلى جانب فنان خلال إقامته في «مستقبل الفن بالدرعية»، ودعمت إنتاج وتركيب عمل فني عُرض في معرض كونتينيوم ٢٦.",
+          "عملت إلى جانب فنان خلال إقامته في «مستقبل الفن بالدرعية»، ودعمت إنتاج وتركيب عمل فني عُرض في معرض «استمرارية ٢٦» (Continuum ’26).",
           "منحتني التجربة فهمًا أقرب لكيف يتحوّل المفهوم الفني إلى عمل جاهز للعرض: تخطيط المتطلبات وتنسيقها، ثم الإنتاج، ثم التركيب في الموقع. كما صقلت قدرتي على التعامل مع التحديات التقنية واللوجستية مع إبقاء رؤية الفنان متّسقة مع متطلبات التنفيذ الواقعية."
         ]
       },
@@ -216,26 +221,50 @@ window.CONTENT = {
       facts: [ { k: { en: "Institution", ar: "المؤسسة" }, v: { en: "Royal Institute of Traditional Arts (WRTH)", ar: "المعهد الملكي للفنون التقليدية (وِرث)" } } ]
     },
     {
-      slug: "mustahel-and-shawahid", year: "2025 –", cover: "mustahel-talk",
+      slug: "mustahel-student-club", year: "2025 –", cover: "mustahel-talk",
       tag: { en: "Collective practice", ar: "ممارسة جماعية" },
-      title: { en: "Mustahel & Shawahid", ar: "مُستهل وشواهد" },
-      role: { en: "Founder, Mustahel Student Club · Creator, Shawahid", ar: "مؤسِّسة نادي مُستهل الطلابي · صانعة قناة شواهد" },
-      blurb: { en: "A student-led cultural community and a YouTube channel on ways of seeing. Exhibitions should be collectively experienced, not simply observed.",
-               ar: "مجتمع ثقافي يقوده الطلاب، وقناة يوتيوب عن طرق الرؤية. المعارض يجب أن تُعاش جماعيًّا، لا أن تُشاهد فقط." },
+      title: { en: "Mustahel Student Club", ar: "نادي مُستهل الطلابي" },
+      role: { en: "Founder & Programme Lead", ar: "مؤسِّسة ومسؤولة البرامج" },
+      blurb: { en: "A student-led cultural community connecting emerging practitioners with Saudi Arabia’s cultural landscape through talks, programmes and institutional collaborations.",
+               ar: "مجتمع ثقافي يقوده الطلاب يربط الممارسين الناشئين بالمشهد الثقافي السعودي عبر الجلسات والبرامج والتعاون مع المؤسسات." },
       body: {
         en: [
-          "I founded Mustahel Student Club, a student-led cultural community connecting emerging practitioners and students with Saudi Arabia’s evolving cultural landscape. Through talks, discussions, public programmes and institutional collaborations, including an International Museum Day event hosted by the Black Gold Museum, it creates spaces for dialogue, participation and lived cultural engagement.",
-          "Shawahid is a YouTube channel dedicated to supporting art and museum culture in Saudi Arabia through accessible, research-based content on artists, exhibitions, curation and visual culture. It invites audiences to move from looking at culture to reading, questioning and understanding it. Its logo grows from a small detail that could go unnoticed and becomes meaning, and a witness.",
-          "This strand also includes my contribution to a handbook on museums and exhibitions in Saudi Arabia, focused on accessibility, participation and the museum as a socially embedded institution."
+          "I founded Mustahel Student Club, a student-led cultural community connecting emerging practitioners and students with Saudi Arabia’s evolving cultural landscape.",
+          "Through talks, discussions, public programmes and institutional collaborations, the club creates spaces for dialogue, participation and lived cultural engagement. For International Museum Day it organised, with Rewaq Museums Club, a conversation hosted by the Black Gold Museum with its director Jack Persekian.",
+          "The experience deepened my belief that exhibitions should not simply be observed, but collectively experienced. It also feeds my contribution to a handbook on museums and exhibitions in Saudi Arabia, focused on accessibility, participation and the museum as a socially embedded institution."
         ],
         ar: [
-          "أسّست نادي مُستهل الطلابي، مجتمعًا ثقافيًّا يقوده الطلاب ويربط الممارسين الناشئين والطلاب بالمشهد الثقافي السعودي المتطوّر. عبر الجلسات والنقاشات والبرامج العامة والتعاون مع المؤسسات، ومنها فعالية اليوم العالمي للمتاحف باستضافة متحف الذهب الأسود، يخلق النادي مساحات للحوار والمشاركة والانخراط الثقافي الحي.",
-          "«شواهد» قناة يوتيوب مكرّسة لدعم ثقافة الفن والمتاحف في السعودية عبر محتوى بحثي ميسّر عن الفنانين والمعارض والتقييم الفني والثقافة البصرية. تدعو الجمهور للانتقال من النظر إلى الثقافة إلى قراءتها ومساءلتها وفهمها. شعارها ينمو من تفصيلة صغيرة قد لا يلحظها أحد، فتصبح معنى، وشاهدًا.",
-          "يشمل هذا المسار أيضًا مساهمتي في دليل عن المتاحف والمعارض في السعودية، يركّز على إمكانية الوصول والمشاركة والمتحف بوصفه مؤسسة متجذّرة اجتماعيًّا."
+          "أسّست نادي مُستهل الطلابي، مجتمعًا ثقافيًّا يقوده الطلاب ويربط الممارسين الناشئين والطلاب بالمشهد الثقافي السعودي المتطوّر.",
+          "عبر الجلسات والنقاشات والبرامج العامة والتعاون مع المؤسسات، يخلق النادي مساحات للحوار والمشاركة والانخراط الثقافي الحي. وفي اليوم العالمي للمتاحف نظّم النادي، بالتعاون مع نادي رواق المتاحف، لقاءً استضافه متحف الذهب الأسود بحضور مديره جاك برسكيان.",
+          "رسّخت التجربة قناعتي بأن المعارض يجب أن تُعاش جماعيًّا لا أن تُشاهد فقط، وهي تغذّي مساهمتي في دليل عن المتاحف والمعارض في السعودية يركّز على إمكانية الوصول والمشاركة والمتحف بوصفه مؤسسة متجذّرة اجتماعيًّا."
         ]
       },
-      images: ["mustahel-group", "shawahid-logo", "shawahid-orange"],
-      facts: [ { k: { en: "Channel", ar: "القناة" }, v: { en: "Shawahid on YouTube", ar: "شواهد على يوتيوب" } } ]
+      images: ["mustahel-group"],
+      facts: [ { k: { en: "Highlights", ar: "أبرز الفعاليات" }, v: { en: "International Museum Day at the Black Gold Museum · talks and public programmes", ar: "اليوم العالمي للمتاحف في متحف الذهب الأسود · جلسات وبرامج عامة" } } ]
+    },
+    {
+      slug: "shawahid", year: "2026 –", cover: "shawahid-orange",
+      tag: { en: "YouTube channel", ar: "قناة يوتيوب" },
+      title: { en: "Shawahid", ar: "شواهد" },
+      role: { en: "Creator, Writer & Producer", ar: "صانعة القناة وكاتبة ومنتجة" },
+      blurb: { en: "A YouTube channel on art and museum culture in Saudi Arabia: research-based episodes that move audiences from looking at culture to reading it.",
+               ar: "قناة يوتيوب عن ثقافة الفن والمتاحف في السعودية: حلقات بحثية تنقل الجمهور من النظر إلى الثقافة إلى قراءتها." },
+      body: {
+        en: [
+          "Shawahid is a YouTube channel dedicated to supporting art and museum culture in Saudi Arabia through accessible, research-based content on artists, exhibitions, curation, visual culture and ways of seeing.",
+          "Each episode is a journey through stations, written in spoken Saudi Arabic, addressed to you, with every claim sourced. The project encourages audiences to move from simply looking at culture to actively reading, questioning and understanding it.",
+          "The logo grows from a small detail that could go unnoticed and becomes meaning, and a witness. That is the way I think: how a detail becomes evidence."
+        ],
+        ar: [
+          "«شواهد» قناة يوتيوب مكرّسة لدعم ثقافة الفن والمتاحف في السعودية عبر محتوى بحثي ميسّر عن الفنانين والمعارض والتقييم الفني والثقافة البصرية وطرق الرؤية.",
+          "كل حلقة رحلة عبر محطات، مكتوبة بلهجة سعودية محكية تخاطبك أنت، وكل معلومة فيها لها مصدر. يشجّع المشروع الجمهور على الانتقال من مجرد النظر إلى الثقافة إلى قراءتها ومساءلتها وفهمها.",
+          "الشعار ينمو من تفصيلة صغيرة قد لا يلحظها أحد، فتصبح معنى، وشاهدًا. وهذه طريقتي في التفكير: كيف تتحوّل التفصيلة إلى دليل."
+        ]
+      },
+      images: ["shawahid-logo"],
+      videos: [],
+      links: [ { href: "https://www.youtube.com/@shawahid", label: { en: "Watch on YouTube", ar: "شاهد على يوتيوب" } } ],
+      facts: [ { k: { en: "Format", ar: "الصيغة" }, v: { en: "Episodes in series · Arabic", ar: "حلقات في سلاسل · بالعربية" } } ]
     }
   ],
 

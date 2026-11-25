@@ -40,7 +40,7 @@ else {
     if (ke.join() !== ka.join()) errors.push(`ui key mismatch: en-only ${ke.filter(k => !ka.includes(k))} ar-only ${ka.filter(k => !ke.includes(k))}`);
     for (const k of ke) { const a = C.ui.en[k], b = C.ui.ar[k]; if (Array.isArray(a) !== Array.isArray(b) || (Array.isArray(a) && a.length !== b.length)) errors.push(`ui.${k} shape differs`); if ((Array.isArray(a) ? a : [a]).some(s => !String(s).trim()) || (Array.isArray(b) ? b : [b]).some(s => !String(s).trim())) errors.push(`ui.${k} empty`); }
   }
-  if (!Array.isArray(C.projects) || C.projects.length !== 8) errors.push(`projects.length = ${C.projects?.length}, want 8`);
+  if (!Array.isArray(C.projects) || C.projects.length !== 9) errors.push(`projects.length = ${C.projects?.length}, want 9`);
   const slugs = new Set();
   (C.projects || []).forEach((p, i) => {
     if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(p.slug || '')) errors.push(`projects[${i}].slug not kebab-case: ${p.slug}`);
