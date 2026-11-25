@@ -26,15 +26,15 @@ node tools/check_content.mjs         # EN/AR parity check
 1. Create an empty public repository named `anhar-portfolio` on GitHub.
 2. Push this folder:
    ```bash
-   git remote add origin https://github.com/<USERNAME>/anhar-portfolio.git
+   git remote add origin https://github.com/anhary010/anhar-portfolio.git
    git push -u origin main
    ```
 3. In the repository: Settings → Pages → Source: **GitHub Actions**. The workflow in `.github/workflows/pages.yml` deploys the whole repo on every push.
-4. URLs: `https://<USERNAME>.github.io/anhar-portfolio/site/` (portfolio), `.../card/` (digital card), `.../cv/Anhar-Almalki-CV-2026.pdf`.
+4. URLs: `https://anhary010.github.io/anhar-portfolio/site/` (portfolio), `.../card/` (digital card), `.../cv/Anhar-Almalki-CV-2026.pdf`.
 5. Point the QR and the vCard at the live card URL, then re-render the PNG:
    ```bash
-   python3 tools/make_qr.py "https://<USERNAME>.github.io/anhar-portfolio/card/"
-   sed -i '' 's#https://USERNAME.github.io#https://<USERNAME>.github.io#' card/anhar.vcf
+   python3 tools/make_qr.py "https://anhary010.github.io/anhar-portfolio/card/"
+   sed -i '' 's#https://USERNAME.github.io#https://anhary010.github.io#' card/anhar.vcf
    bash tools/render_card_png.sh
    ```
 
