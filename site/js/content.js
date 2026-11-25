@@ -265,7 +265,7 @@ window.CONTENT = {
       videos: [
         { id: "wkv67RvX8VE", title: { en: "Why do contemporary art museums all look alike? · Behind the Glass 01", ar: "ليش متاحف الفن المعاصر صارت تشبه بعض؟ · خلف الزجاج 01" } },
         { id: "miH-sXj8SMc", title: { en: "Who decides that this is art? · Behind the Glass 02", ar: "من يقرر أن هذا فن؟ · خلف الزجاج 02" } },
-        { id: "3MtEY5c7ok0", title: { en: "The white wall in museums was just a decision · Behind the Glass", ar: "الجدار الأبيض في المتاحف… كان مجرد قرار · خلف الزجاج" } },
+        { id: "2xEzHtSKeuA", title: { en: "Who decides what enters the museum? The profession nobody knows", ar: "مين يقرر ايش يدخل المتحف؟ · أكثر مهنة محد يعرفها" } },
         { id: "LkuQc4rlPqU", title: { en: "How do you write a museum label that doesn’t kill the work?", ar: "كيف تكتب بطاقة متحفية ما تقتل العمل؟" } }
       ],
       links: [ { href: "https://www.youtube.com/@SHAWAHID-0", label: { en: "Watch on YouTube", ar: "شاهد على يوتيوب" } } ],
