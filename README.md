@@ -22,5 +22,22 @@ python3 tools/export_assets.py      # dossier → site/img
 node tools/check_content.mjs         # EN/AR parity check
 ```
 
-## Publish
-See the "Publish" section at the bottom (filled in once the GitHub Pages URL exists).
+## Publish (GitHub Pages)
+1. Create an empty public repository named `anhar-portfolio` on GitHub.
+2. Push this folder:
+   ```bash
+   git remote add origin https://github.com/<USERNAME>/anhar-portfolio.git
+   git push -u origin main
+   ```
+3. In the repository: Settings → Pages → Source: **GitHub Actions**. The workflow in `.github/workflows/pages.yml` deploys the whole repo on every push.
+4. URLs: `https://<USERNAME>.github.io/anhar-portfolio/site/` (portfolio), `.../card/` (digital card), `.../cv/Anhar-Almalki-CV-2026.pdf`.
+5. Point the QR and the vCard at the live card URL, then re-render the PNG:
+   ```bash
+   python3 tools/make_qr.py "https://<USERNAME>.github.io/anhar-portfolio/card/"
+   sed -i '' 's#https://USERNAME.github.io#https://<USERNAME>.github.io#' card/anhar.vcf
+   bash tools/render_card_png.sh
+   ```
+
+## Edit content
+All site text lives in `site/js/content.js` (EN + AR). After editing run `node tools/check_content.mjs && node tools/prerender.mjs`.
+To add Shawahid videos: in the `shawahid` project set `videos: [{ id: "YOUTUBE_ID", title: { en: "...", ar: "..." } }]` and update the YouTube link in `links`.

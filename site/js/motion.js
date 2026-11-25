@@ -27,12 +27,12 @@
     html.classList.add('motion-ready');
 
     // Hero entrance
-    const heroImg = $('.hero__img-frame'), heroTags = $('.hero__tags'), holder = $('.hero__img-holder');
-    gsap.set(heroImg, { transformPerspective: 1500 });
-    gsap.timeline({ defaults: { ease: 'expo.out' } })
-      .fromTo(heroImg, { opacity: 0, y: 250, rotateY: 45 }, { opacity: 1, y: 0, rotateY: 0, duration: 1.2 }, 0.1)
-      .fromTo(heroTags, { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 1 }, 0.4);
-    gsap.to(holder, { y: -60, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+    const heroImg = $('.hero__img-frame'), heroTags = $('.hero__tags'), holder = $('.hero__img-holder'), heroGhost = $('.hero .ghost');
+    const tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
+    if (heroImg) { gsap.set(heroImg, { transformPerspective: 1500 }); tl.fromTo(heroImg, { opacity: 0, y: 250, rotateY: 45 }, { opacity: 1, y: 0, rotateY: 0, duration: 1.2 }, 0.1); }
+    else if (heroGhost) tl.fromTo(heroGhost, { opacity: 0, y: 120, rotateX: 35, transformPerspective: 1500 }, { opacity: 1, y: 0, rotateX: 0, duration: 1.4 }, 0.1);
+    tl.fromTo(heroTags, { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 1 }, 0.4);
+    if (holder) gsap.to(holder, { y: -60, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
 
     // Ghost marquees scrub horizontally with scroll
     $$('.ghost').forEach(g => {
