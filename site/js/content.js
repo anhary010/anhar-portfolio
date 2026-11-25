@@ -243,7 +243,7 @@ window.CONTENT = {
       facts: [ { k: { en: "Highlights", ar: "أبرز الفعاليات" }, v: { en: "International Museum Day at the Black Gold Museum · talks and public programmes", ar: "اليوم العالمي للمتاحف في متحف الذهب الأسود · جلسات وبرامج عامة" } } ]
     },
     {
-      slug: "shawahid", year: "2026 –", cover: "shawahid-orange",
+      slug: "shawahid", year: "2026 –", cover: "shawahid-crowd",
       tag: { en: "YouTube channel", ar: "قناة يوتيوب" },
       title: { en: "Shawahid", ar: "شواهد" },
       role: { en: "Creator, Writer & Producer", ar: "صانعة القناة وكاتبة ومنتجة" },
@@ -261,10 +261,18 @@ window.CONTENT = {
           "الشعار ينمو من تفصيلة صغيرة قد لا يلحظها أحد، فتصبح معنى، وشاهدًا. وهذه طريقتي في التفكير: كيف تتحوّل التفصيلة إلى دليل."
         ]
       },
-      images: ["shawahid-logo"],
-      videos: [],
-      links: [ { href: "https://www.youtube.com/@shawahid", label: { en: "Watch on YouTube", ar: "شاهد على يوتيوب" } } ],
-      facts: [ { k: { en: "Format", ar: "الصيغة" }, v: { en: "Episodes in series · Arabic", ar: "حلقات في سلاسل · بالعربية" } } ]
+      images: ["shawahid-logo", "shawahid-board"],
+      videos: [
+        { id: "wkv67RvX8VE", title: { en: "Why do contemporary art museums all look alike? · Behind the Glass 01", ar: "ليش متاحف الفن المعاصر صارت تشبه بعض؟ · خلف الزجاج 01" } },
+        { id: "miH-sXj8SMc", title: { en: "Who decides that this is art? · Behind the Glass 02", ar: "من يقرر أن هذا فن؟ · خلف الزجاج 02" } },
+        { id: "3MtEY5c7ok0", title: { en: "The white wall in museums was just a decision · Behind the Glass", ar: "الجدار الأبيض في المتاحف… كان مجرد قرار · خلف الزجاج" } },
+        { id: "LkuQc4rlPqU", title: { en: "How do you write a museum label that doesn’t kill the work?", ar: "كيف تكتب بطاقة متحفية ما تقتل العمل؟" } }
+      ],
+      links: [ { href: "https://www.youtube.com/@SHAWAHID-0", label: { en: "Watch on YouTube", ar: "شاهد على يوتيوب" } } ],
+      facts: [
+        { k: { en: "Channel", ar: "القناة" }, v: { en: "youtube.com/@SHAWAHID-0", ar: "youtube.com/@SHAWAHID-0" } },
+        { k: { en: "Current series", ar: "السلسلة الحالية" }, v: { en: "Behind the Glass (خلف الزجاج)", ar: "خلف الزجاج" } }
+      ]
     }
   ],
 

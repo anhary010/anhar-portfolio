@@ -22,6 +22,7 @@ MAP = {
  "shawahid-logo": (DOSSIER, 23, 149), "shawahid-orange": (DOSSIER, 23, 150), "award-ceremony": (DOSSIER, 5, 60),
  "apple-wallcards-1": (CARDS, 1, None), "apple-wallcards-2": (CARDS, 2, None), "apple-wallcards-3": (CARDS, 5, None),
  "apple-wallcard-braids": (CARDS, 9, None),
+ "shawahid-crowd": (DOSSIER, 23, 147), "shawahid-board": (DOSSIER, 23, 148),
  "documented-poster": (WATHAQ, 1, None), "documented-zone": (WATHAQ, 20, None), "documented-3d": (WATHAQ, 22, None),
 }
 

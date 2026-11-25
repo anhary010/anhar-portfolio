@@ -105,7 +105,6 @@ html[lang="ar"] .hero__taglist { letter-spacing: 0; text-transform: none; font-s
 .panel__videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin: 8px 0 28px; }
 .panel__video { margin: 0; } .panel__video iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; background: #000; display: block; }
 .panel__video figcaption { font-size: 14px; margin-top: 8px; }
-.stack__card[data-slug="shawahid"] .stack__img, .panel__media img[src*="shawahid-orange"] { filter: none; }
 .stack__content { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 40px 30px; color: #fff; z-index: 1; }
 .stack__top { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
 .stack__title { color: #fff; text-transform: uppercase; font-size: clamp(26px, 3vw, 44px); max-width: 16ch; }
