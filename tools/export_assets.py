@@ -9,6 +9,7 @@ OUT = os.path.join(ROOT, "site", "img")
 SRC = "/Users/anharalmalki/Desktop/Downloads"
 DOSSIER = os.path.join(SRC, "Anhar Almalki — Selected Narratives A Curatorial & Spatial Practice Dossier-3.pdf")
 CARDS = os.path.join(SRC, "The Individual Apple – Wall Cards-2.pdf")
+WATHAQ = "/Users/anharalmalki/Documents/wrth - mastar/first smemter/out comes/فاينل وثق فبقى.pdf"
 
 # slug: (pdf, page(1-based), xref or None)
 MAP = {
@@ -21,6 +22,7 @@ MAP = {
  "shawahid-logo": (DOSSIER, 23, 149), "shawahid-orange": (DOSSIER, 23, 150), "award-ceremony": (DOSSIER, 5, 60),
  "apple-wallcards-1": (CARDS, 1, None), "apple-wallcards-2": (CARDS, 2, None), "apple-wallcards-3": (CARDS, 5, None),
  "apple-wallcard-braids": (CARDS, 9, None),
+ "documented-poster": (WATHAQ, 1, None), "documented-zone": (WATHAQ, 20, None), "documented-3d": (WATHAQ, 22, None),
 }
 
 def export(src_pdf, page, xref, slug, max_w=1600):

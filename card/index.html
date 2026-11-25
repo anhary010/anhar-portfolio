@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anhar Almalki — Digital Card</title>
+<meta name="description" content="Anhar Almalki — Curator & Exhibition Designer. Save contact, WhatsApp, email, LinkedIn, Instagram, portfolio.">
+<meta property="og:title" content="Anhar Almalki — Curator & Exhibition Designer">
+<meta property="og:image" content="portrait.jpg">
+<meta name="theme-color" content="#d2d2ce">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="card.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23d2d2ce'/%3E%3Ctext x='32' y='46' font-family='Impact,Anton,sans-serif' font-size='40' text-anchor='middle' fill='%232a2a29'%3EA%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<main class="card" id="card">
+  <div class="ghost" aria-hidden="true">ANHAR</div>
+  <header class="card__top">
+    <span class="card__logo">ANHAR</span>
+    <button class="lang" id="langToggle" type="button" aria-label="Switch to Arabic">ع</button>
+  </header>
+
+  <figure class="card__photo"><img src="portrait.jpg" alt="Anhar Almalki" width="420" height="446"></figure>
+
+  <h1 class="card__name" data-i18n="name">Anhar Almalki</h1>
+  <p class="card__role" data-i18n="role">Curator · Exhibition &amp; Spatial Designer</p>
+  <ul class="card__tags" id="tags"><li>#Curatorial</li><li>#Spatial</li><li>#Archival</li><li>#Research</li></ul>
+
+  <nav class="card__actions" aria-label="Contact actions">
+    <a class="act act--primary" href="anhar.vcf" download="Anhar-Almalki.vcf" data-i18n="save"><span class="act__icon">＋</span>Save contact</a>
+    <a class="act" href="https://wa.me/966534402993" target="_blank" rel="noopener" data-i18n="whatsapp"><span class="act__icon">◎</span>WhatsApp</a>
+    <a class="act" href="mailto:anharalmalki1@gmail.com" data-i18n="email"><span class="act__icon">✉</span>Email</a>
+    <a class="act" href="https://www.linkedin.com/in/anhar-almalki-" target="_blank" rel="noopener" data-i18n="linkedin"><span class="act__icon">in</span>LinkedIn</a>
+    <a class="act" href="https://www.instagram.com/Anhray12" target="_blank" rel="noopener" data-i18n="instagram"><span class="act__icon">◻</span>Instagram</a>
+    <a class="act" href="../site/" id="portfolioLink" data-i18n="portfolio"><span class="act__icon">→</span>Portfolio</a>
+  </nav>
+
+  <section class="card__qr">
+    <img src="qr.svg" alt="QR code linking to this card" width="150" height="150" id="qrImg">
+    <p data-i18n="scan">Scan to open this card</p>
+  </section>
+
+  <footer class="card__foot">
+    <p><a href="mailto:anharalmalki1@gmail.com">anharalmalki1@gmail.com</a><br><a href="tel:+966534402993" dir="ltr">+966 53 440 2993</a></p>
+    <p class="card__open" data-i18n="open">Open for curatorial collaborations &amp; cultural exchange</p>
+  </footer>
+</main>
+<script src="card.js"></script>
+</body>
+</html>

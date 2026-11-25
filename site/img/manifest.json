@@ -149,10 +149,28 @@
   "src": "The Individual Apple – Wall Ca p9",
   "bytes": 85728
  },
+ "documented-poster": {
+  "w": 1600,
+  "h": 900,
+  "src": "فاينل وثق فبقى.pdf p1",
+  "bytes": 70224
+ },
+ "documented-zone": {
+  "w": 1600,
+  "h": 900,
+  "src": "فاينل وثق فبقى.pdf p20",
+  "bytes": 90835
+ },
+ "documented-3d": {
+  "w": 1600,
+  "h": 900,
+  "src": "فاينل وثق فبقى.pdf p22",
+  "bytes": 63945
+ },
  "apple-poster": {
   "w": 905,
   "h": 1280,
-  "src": "Exhibition poster (WhatsApp 2026-11-19)",
+  "src": "src-apple-poster.jpeg",
   "bytes": 155370
  }
 }
